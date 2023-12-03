@@ -579,7 +579,7 @@ html {
   }
   .page_one_about_me {
     top: 160px;
-    right: -29px;
+    right: 0px;
   }
   .page_one .buttons {
     flex-direction: column;
