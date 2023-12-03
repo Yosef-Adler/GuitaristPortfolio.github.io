@@ -1,0 +1,817 @@
+html {
+  scroll-behavior: smooth;
+  font-family: MontserratT;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: MontserratT;
+  src: url(/project_2/src/fonts/Montserrat-Regular.ttf);
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: MontserratT;
+  src: url(/project_2/src/fonts/Montserrat-SemiBold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+.page {
+  margin: auto;
+  position: relative;
+  max-width: 1440px;
+  background: #F0F0F0;
+  overflow: hidden;
+}
+
+.grey {
+  background: #E2E2E2;
+}
+
+.orange {
+  background: #F28B64;
+}
+
+.blue {
+  background: #5290EA;
+}
+
+.buttons {
+  display: inline-flex;
+  align-items: center;
+}
+
+.booking {
+  width: 11.1em;
+  height: 3.33em;
+  border-radius: 5.55em;
+  background: #F28B64;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-size: clamp(0.85rem, 1.5vw, 1.125rem);
+  color: #FFFFFF;
+}
+
+.big_text {
+  font-size: 4.5rem;
+}
+
+.ask {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #F0F0F0;
+  margin-left: 1rem;
+  background: transparent;
+}
+.ask img {
+  width: clamp(30px, 4vw, 58px);
+}
+.ask p {
+  float: right;
+  text-align: start;
+  margin-left: 12px;
+  font-size: clamp(0.85rem, 1.5vw, 1.125rem);
+  font-weight: 300;
+  margin-top: 5px;
+  background: transparent;
+}
+
+.line {
+  width: 65px;
+  background-color: black;
+  border: solid 0.5px;
+}
+
+.icons button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid 1px #488AEA;
+  border-radius: 100px;
+  font-size: 21px;
+  margin-right: 17px;
+  z-index: 6;
+  background-color: #E5E5E5;
+}
+
+.circle {
+  position: absolute;
+  width: 194px;
+  height: 194px;
+  background: linear-gradient(144deg, rgba(237, 123, 80, 0.5) 0%, rgba(72, 138, 234, 0.5) 54.17%, rgba(44, 44, 44, 0.5) 100%);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle_big {
+  width: 282px;
+  height: 282px;
+  border-radius: 282px;
+  transform: rotate(45deg);
+}
+
+.circle_ins {
+  background-color: #F0F0F0;
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+}
+
+.circle_ins_big {
+  width: 188px;
+  height: 188px;
+}
+
+.page_one {
+  height: 800px;
+  padding-top: 16px;
+}
+.page_one header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 170px;
+  height: 70px;
+}
+.page_one header li {
+  display: inline-flex;
+}
+.page_one header li:nth-child(2) {
+  margin: 0 70px;
+}
+.page_one header a {
+  text-decoration: none;
+  color: black;
+}
+.page_one header .toggle_button {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0.75rem;
+  right: 1rem;
+  width: 30px;
+  height: 21px;
+}
+.page_one header .toggle_button .bar {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: black;
+}
+.page_one_rectangle_orange {
+  position: absolute;
+  top: 244px;
+  left: 129px;
+  width: 618.428px;
+  height: 220px;
+  transform: rotate(-50.806deg);
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 4;
+}
+.page_one_rectangle_blue {
+  position: absolute;
+  top: 229px;
+  left: 110px;
+  width: 565.949px;
+  height: 220px;
+  transform: rotate(-64.003deg);
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+}
+.page_one_rectangle_grey {
+  position: absolute;
+  top: 280px;
+  left: 167px;
+  width: 608.968px;
+  height: 220px;
+  transform: rotate(-36.15deg);
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+.page_one_foto {
+  position: absolute;
+  top: 90px;
+  left: 150px;
+  z-index: 5;
+}
+.page_one_about_me {
+  position: absolute;
+  top: 235px;
+  right: 226px;
+  z-index: 5;
+}
+.page_one_about_me .big_text {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
+.page_one_about_me p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+  background: transparent;
+}
+.page_one_buttons {
+  margin-top: 20px;
+}
+.page_one_circle {
+  top: 214px;
+  right: 184px;
+}
+.page_one_circle_big {
+  bottom: -110px;
+  right: -105px;
+}
+
+.page_two {
+  height: 700px;
+  background: #FFFFFF;
+}
+.page_two_big_text {
+  margin-left: 150px;
+  margin-top: 32px;
+}
+.page_two_cards {
+  display: flex;
+  justify-content: center;
+}
+.page_two_cards img {
+  height: 335px;
+}
+.page_two .guitar_card {
+  display: inline-flex;
+  position: relative;
+  align-items: flex-end;
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+  margin-top: 40px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 5;
+}
+.page_two .guitar_card:nth-child(2) {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.page_two .guitar_card p {
+  position: absolute;
+  font-size: 36px;
+  transform: rotate(90deg);
+  top: 145px;
+  right: 10px;
+  text-align: center;
+  line-height: normal;
+}
+.page_two .guitar_card .p_orange {
+  right: -50px;
+}
+.page_two_small_cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.page_two_small_cards .small_card {
+  display: inline-flex;
+  margin-left: 60px;
+  z-index: 5;
+}
+.page_two_small_cards .small_card:nth-child(1) {
+  margin-left: 0;
+}
+.page_two_small_cards .small_card p {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.page_two_small_cards .small_card p span {
+  font-size: 48px;
+  font-weight: 600;
+}
+.page_two_circle {
+  top: 62px;
+  right: 82px;
+}
+.page_two_circle_two {
+  top: 372px;
+  left: 82px;
+}
+.page_two_circle_ins {
+  background: #FFFFFF;
+}
+
+.page_three {
+  min-height: 640px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page_three .big_text {
+  position: relative;
+  z-index: 5;
+}
+.page_three .buttons {
+  width: 480px;
+  justify-content: space-evenly;
+  margin-top: 32px;
+}
+.page_three_p_column {
+  max-width: 480px;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  z-index: 20;
+  position: relative;
+}
+.page_three_p_button {
+  margin-top: 5px;
+}
+.page_three_circle_big {
+  top: 156px;
+  left: 120px;
+}
+.page_three_circle_big_two {
+  top: -96px;
+  left: 1292px;
+  transform: rotate(-48.201deg);
+}
+.page_three_subtract {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+}
+
+.page_four {
+  max-height: 250px;
+  background: #FFF;
+  overflow: visible;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page_four .icons {
+  margin-top: 20px;
+}
+
+@media (max-width: 1440px) {
+  .page_one_foto {
+    left: 80px;
+  }
+  .page_one_rectangle_orange {
+    left: 49px;
+  }
+  .page_one_rectangle_blue {
+    left: 40px;
+  }
+  .page_one_rectangle_grey {
+    left: 107px;
+  }
+  .page_one_about_me {
+    display: inline-block;
+    right: 126px;
+  }
+}
+@media (max-width: 1270px) {
+  .page_one_about_me {
+    right: 35px;
+  }
+}
+@media (max-width: 1199px) {
+  .page_one {
+    height: 65vw;
+  }
+  .page_one_foto {
+    max-width: 65%;
+    top: 140px;
+  }
+  .page_one_rectangle_orange {
+    top: 294px;
+    width: 550px;
+    height: 200px;
+  }
+  .page_one_rectangle_blue {
+    top: 279px;
+    width: 500px;
+    height: 200px;
+  }
+  .page_one_rectangle_grey {
+    top: 330px;
+    width: 500px;
+    height: 200px;
+  }
+  .page_one_about_me {
+    right: 30px;
+  }
+  .page_two {
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+  .page_two .guitar_card {
+    width: 290px;
+    height: 320px;
+  }
+  .page_two .guitar_card p {
+    right: -15px;
+  }
+  .page_two .guitar_card .p_orange {
+    right: -72px;
+  }
+  .page_two_cards img {
+    height: 300px;
+  }
+  .page_two_small_cards img {
+    width: 6vw;
+  }
+  .page_two .small_card p span {
+    font-size: 4vw;
+  }
+  .page_four img {
+    width: 50%;
+  }
+  .page_four_rigth_side .big_text {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 991px) {
+  .page_one {
+    height: clamp(555px, 70vw, 662px);
+  }
+  .page_one_circle_big {
+    display: none;
+  }
+  .page_one_circle {
+    top: 102px;
+    right: 52px;
+  }
+  .page_one_about_me {
+    max-width: 315px;
+    top: 186px;
+    right: 20px;
+  }
+  .page_one_rectangle_orange {
+    width: 55vw;
+    height: 20vw;
+    top: 280px;
+    left: -10px;
+  }
+  .page_one_rectangle_blue {
+    width: 50vw;
+    height: 20vw;
+    top: 265px;
+    left: -20px;
+  }
+  .page_one_rectangle_grey {
+    width: 50vw;
+    height: 20vw;
+    left: 28px;
+    top: 320px;
+  }
+  .page_one header {
+    margin: auto;
+  }
+  .page_one header img {
+    margin-left: 4em;
+  }
+  .page_one header ul {
+    margin-right: 4em;
+  }
+  .page_one .big_text {
+    font-size: 3rem;
+  }
+  .page_two {
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+  .page_two_big_text {
+    font-size: 7vw;
+    margin-left: 85px;
+  }
+  .page_two_cards {
+    justify-content: space-evenly;
+  }
+  .page_two .guitar_card {
+    width: 29vw;
+    height: 34vw;
+  }
+  .page_two .guitar_card:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .page_two .guitar_card .p_orange {
+    right: -60px;
+  }
+  .page_two .guitar_card p {
+    font-size: 3.2vw;
+    top: 115px;
+  }
+  .page_two_circle_two {
+    top: 240px;
+    left: -34px;
+  }
+  .page_two_cards img {
+    height: 32vw;
+  }
+  .page_two_small_cards .small_card {
+    margin-left: 20px;
+  }
+  .page_two_small_cards .small_card p {
+    font-size: 1.8vw;
+  }
+  .page_three {
+    height: 100%;
+    min-height: 0;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+  }
+  .page_three .left_section {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    height: 523px;
+  }
+  .page_three .right_section {
+    margin-top: 2rem;
+    max-width: 49vw;
+  }
+  .page_three .buttons {
+    max-width: 49vw;
+    margin-top: 1rem;
+  }
+  .page_three .big_text {
+    font-size: 6.5vw;
+  }
+}
+@media (max-width: 767px) {
+  .page_one {
+    height: clamp(444px, 76vw, 542px);
+  }
+  .page_one header ul {
+    margin-right: 2em;
+  }
+  .page_one header ul li:nth-child(2) {
+    margin: 0 35px;
+  }
+  .page_one_foto {
+    left: 20px;
+  }
+  .page_one_rectangle_orange {
+    top: 250px;
+    left: -45px;
+  }
+  .page_one_rectangle_blue {
+    top: 236px;
+    left: -52px;
+  }
+  .page_one_rectangle_grey {
+    top: 278px;
+    left: -10px;
+  }
+  .page_one_about_me {
+    top: 160px;
+    right: -29px;
+  }
+  .page_one .buttons {
+    flex-direction: column;
+    width: 228px;
+  }
+  .page_one .buttons .booking {
+    margin-bottom: 1em;
+  }
+  .page_one .buttons .ask {
+    margin-left: 0;
+  }
+  .page_two {
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+  .page_two_big_text {
+    margin-top: 1.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .page_two .guitar_card {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .page_two .guitar_card p {
+    position: static;
+    transform: none;
+    margin-bottom: 1rem;
+  }
+  .page_two_cards {
+    margin-top: 3rem;
+  }
+  .page_two_cards img {
+    margin-right: 20px;
+  }
+  .page_two_circle_two {
+    top: 240px;
+    left: -34px;
+  }
+  .page_three {
+    display: block;
+  }
+  .page_three_subtract {
+    display: none;
+  }
+  .page_three .left_section {
+    display: none;
+  }
+  .page_three .right_section {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    container-type: inline-size;
+    text-align: center;
+  }
+  .page_three_p_column {
+    -moz-column-width: 250px;
+         column-width: 250px;
+    -moz-column-rule: 1px solid grey;
+         column-rule: 1px solid grey;
+    -moz-column-gap: 3em;
+         column-gap: 3em;
+    margin: auto;
+    padding-top: 2em;
+    z-index: 20;
+    position: relative;
+    font-size: clamp(1rem, 3cqi, 2rem);
+    max-width: 700px;
+  }
+  .page_three .big_text {
+    max-width: 300px;
+    margin: auto;
+  }
+  .page_three .buttons {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .page_three_circle_big {
+    top: -10px;
+  }
+  .page_four {
+    max-height: 175px;
+  }
+  .page_four_rigth_side .big_text {
+    font-size: 5vw;
+    margin-left: 2rem;
+  }
+  .page_four_rigth_side .icons {
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    container-type: inline-size;
+  }
+  .page_four_rigth_side .icons button {
+    font-size: 7cqi;
+    width: 12.5cqi;
+    height: 12.5cqi;
+  }
+  .line {
+    display: none;
+  }
+  .line .buttons {
+    max-width: none;
+    margin-top: 1.5rem;
+    justify-content: center;
+    width: 100%;
+  }
+  .line_circle_big {
+    top: -128px;
+    left: 390px;
+  }
+}
+@media (max-width: 575px) {
+  .page_one {
+    padding-top: 0;
+    text-align: center;
+    height: clamp(400px, 72vw, 540px);
+  }
+  .page_one header .toggle_button {
+    display: flex;
+    z-index: 25;
+  }
+  .page_one header ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background: #E2E2E2;
+    z-index: 20;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 100%;
+  }
+  .page_one header ul.active {
+    display: flex;
+  }
+  .page_one header li {
+    height: 15%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+  }
+  .page_one header li:hover {
+    background-color: rgba(85, 85, 85, 0.3333333333);
+  }
+  .page_one header li:hover li:nth-child(2) {
+    margin: 0;
+  }
+  .page_one_foto {
+    display: none;
+  }
+  .page_one_rectangle_orange {
+    display: none;
+  }
+  .page_one_rectangle_blue {
+    display: none;
+  }
+  .page_one_rectangle_grey {
+    display: none;
+  }
+  .page_one_about_me {
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    top: 50px;
+    left: 0;
+  }
+  .page_one header img {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .page_two_cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  .page_two_cards img {
+    position: absolute;
+    transform: rotate(0.25turn);
+    height: 85cqi;
+    top: -50px;
+    left: 56px;
+  }
+  .page_two .guitar_card {
+    container-type: inline-size;
+    width: 320px;
+    height: 170px;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+  .page_two .guitar_card p {
+    margin: 0.5em 0 0 1em;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .page_two_small_cards .small_card {
+    margin-left: 10px;
+  }
+  .page_three .big_text {
+    max-width: 200px;
+  }
+  .page_four {
+    max-height: 250px;
+  }
+  .page_four_rigth_side {
+    text-align: center;
+    max-width: 300px;
+  }
+  .page_four_rigth_side .big_text {
+    max-width: 250px;
+    margin-left: 0;
+  }
+  .page_four_rigth_side .icons {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 250px;
+    margin: 0.5em 0 0 0;
+    width: 60cqi;
+  }
+  .icons button {
+    margin-right: 0;
+  }
+}
+@media (max-width: 320px) {
+  .page_one header img {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
