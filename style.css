@@ -11,13 +11,13 @@ html {
 
 @font-face {
   font-family: MontserratT;
-  src: url(/guitar_page/src/fonts/Montserrat-Regular.ttf);
+  src: url(Montserrat-Regular.ttf);
   font-weight: regular;
   font-style: normal;
 }
 @font-face {
   font-family: MontserratT;
-  src: url(/guitar_page/src/fonts/Montserrat-SemiBold.ttf);
+  src: url(Montserrat-SemiBold.ttf);
   font-weight: bold;
   font-style: normal;
 }
