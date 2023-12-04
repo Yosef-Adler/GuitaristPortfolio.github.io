@@ -6,17 +6,18 @@ html {
 
 * {
   box-sizing: border-box;
+  font-family: MontserratT;
 }
 
 @font-face {
   font-family: MontserratT;
-  src: url(Montserrat-Regular.ttf);
+  src: url(/guitar_page/src/fonts/Montserrat-Regular.ttf);
   font-weight: regular;
   font-style: normal;
 }
 @font-face {
   font-family: MontserratT;
-  src: url(Montserrat-SemiBold.ttf);
+  src: url(/guitar_page/src/fonts/Montserrat-SemiBold.ttf);
   font-weight: bold;
   font-style: normal;
 }
@@ -88,6 +89,9 @@ html {
 }
 
 .icons button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 2.5rem;
   height: 2.5rem;
   border: solid 1px #488AEA;
@@ -96,6 +100,10 @@ html {
   margin-right: 17px;
   z-index: 6;
   background-color: #E5E5E5;
+}
+
+.icons img {
+  width: 1.5em;
 }
 
 .circle {
@@ -211,6 +219,7 @@ html {
   right: 226px;
   z-index: 5;
 }
+
 .page_one_about_me .big_text {
   font-size: clamp(2rem, 5vw, 4.5rem);
 }
@@ -223,6 +232,13 @@ html {
 .page_one_buttons {
   margin-top: 20px;
 }
+.page_one .buttons {
+  flex-direction: column;
+}
+.page_one .buttons .booking {
+  margin-bottom: 1em;
+}
+
 .page_one_circle {
   top: 214px;
   right: 184px;
@@ -439,6 +455,9 @@ html {
   .page_four img {
     width: 50%;
   }
+  .page_four button img {
+    width: 100%
+  }
   .page_four_rigth_side .big_text {
     font-size: 5vw;
   }
@@ -458,6 +477,9 @@ html {
     max-width: 315px;
     top: 186px;
     right: 20px;
+  }
+  .page_one_about_me .icons button {
+    margin-right: 0.5em;
   }
   .page_one_rectangle_orange {
     width: 55vw;
@@ -579,7 +601,7 @@ html {
   }
   .page_one_about_me {
     top: 160px;
-    right: 0px;
+    right: 10px;
   }
   .page_one .buttons {
     flex-direction: column;
@@ -761,13 +783,6 @@ html {
     align-items: center;
     margin-top: 0;
   }
-  .page_two_cards img {
-    position: absolute;
-    transform: rotate(0.25turn);
-    height: 85cqi;
-    top: -50px;
-    left: 56px;
-  }
   .page_two_circle {
     top: 30px;
     right: 14px;
@@ -775,6 +790,13 @@ html {
   .page_two_circle_two {
     top: 362px;
     left: 17px;
+  }
+  .page_two_cards img {
+    position: absolute;
+    transform: rotate(0.25turn);
+    height: 85cqi;
+    top: -50px;
+    left: 56px;
   }
   .page_two .guitar_card {
     container-type: inline-size;
