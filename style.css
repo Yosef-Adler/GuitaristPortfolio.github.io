@@ -768,6 +768,14 @@ html {
     top: -50px;
     left: 56px;
   }
+  .page_two_circle {
+    top: 30px;
+    right: 14px;
+  }
+  .page_two_circle_two {
+    top: 362px;
+    left: 17px;
+  }
   .page_two .guitar_card {
     container-type: inline-size;
     width: 320px;
