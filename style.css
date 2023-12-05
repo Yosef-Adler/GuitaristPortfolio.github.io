@@ -8,9 +8,6 @@ html {
   box-sizing: border-box;
   font-family: MontserratT;
 }
-body {
-  margin: 0 auto;
-}
 
 @font-face {
   font-family: MontserratT;
@@ -30,6 +27,7 @@ body {
   max-width: 1440px;
   background: #F0F0F0;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .grey {
