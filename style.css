@@ -693,12 +693,6 @@ html {
   .page_four_rigth_side .icons {
     margin-left: 2rem;
     margin-top: 0.7rem;
-    container-type: inline-size;
-  }
-  .page_four_rigth_side .icons button {
-    font-size: 7cqi;
-    width: 12.5cqi;
-    height: 12.5cqi;
   }
   .line {
     display: none;
