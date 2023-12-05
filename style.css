@@ -8,6 +8,9 @@ html {
   box-sizing: border-box;
   font-family: MontserratT;
 }
+body {
+  margin: 0 auto;
+}
 
 @font-face {
   font-family: MontserratT;
